@@ -1,0 +1,81 @@
+<template>
+  <header class="header">
+    <div class="container">
+      <div class="header-mainBlock">
+        <div class="header-logoBlock">
+          <nuxt-logo/>
+          <div class="header-logoBlock_title">orthodox.digital</div>
+        </div>
+        <div class="header-logoBlock_subtitle">Follow God in the digital world</div>
+      </div>
+
+    </div>
+
+  </header>
+</template>
+
+<script>
+export default {
+  name: "Header"
+}
+</script>
+
+<style scoped>
+
+.header {
+  background: #F1FCFF;
+}
+.header-mainBlock {
+
+  color: #12C0FF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logoBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 52px;
+}
+
+.header-logoBlock_title {
+  font-size: 14px;
+  padding-left: 10px;
+  font-weight: 400;
+
+}
+
+.header-logoBlock_subtitle {
+  padding-top: 30px;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 120%;
+  letter-spacing: -0.045em;
+  color: #00BBFF;
+  padding-bottom: 46px;
+  text-align: center;
+}
+
+@media (min-width: 375px) and (max-width: 768px){
+.container{
+  width: 85%;
+}
+  .header-logoBlock_subtitle{
+    font-size: 34px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: -0.045em;
+  }
+  .header-logoBlock {
+    padding-top: 46px;
+  }
+  .header-logoBlock_subtitle{
+    padding-bottom: 62px;
+    padding-top: 54px;
+  }
+}
+
+</style>
