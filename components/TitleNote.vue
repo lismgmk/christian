@@ -58,7 +58,7 @@ export default {
   padding-bottom: 141px;
 }
 
-@media (min-width: 375px) and (max-width: 768px){
+@media (min-width: 375px) and (max-width: 1200px){
   .container {
     width: 85%;
   }
@@ -86,7 +86,6 @@ export default {
     height: 142px;
     margin-bottom: 132px;
   }
-
-
 }
+
 </style>

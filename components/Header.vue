@@ -59,7 +59,7 @@ export default {
   text-align: center;
 }
 
-@media (min-width: 375px) and (max-width: 768px){
+@media (min-width: 375px) and (max-width: 1000px){
 .container{
   width: 85%;
 }
