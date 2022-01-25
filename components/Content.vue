@@ -34,18 +34,95 @@ export default {
 <style scoped>
 
 
-@media (min-width: 375px) {
-  .container {
-    width: 85%;
-  }
+.content {
+  width: 100%;
+  background: #E5E5E5;
+  position: relative;
+}
 
+
+
+.content-mainBlock {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.content-buttonBlock {
+  padding-top: 32px;
+  padding-bottom: 250px;
+}
+
+.content-buttonBlock img {
+  max-width: 168px;
+  max-height: 50px;
+
+}
+
+.imgAppStore {
+  margin-right: 20px;
+}
+
+.content-listBlock {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: #112A32;
+  padding-top: 190px;
+}
+
+.content-listBlock li {
+  padding-bottom: 28px;
+}
+
+
+.img-mobileScreens {
+  position: absolute;
+  width: 953px;
+  height: 850px;
+  bottom: 14px;
+  right: 0;
+  top: -150px;
+  z-index: 10;
+}
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .img-mobileScreens {
+    right: -120px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .img-mobileScreens {
+    width: 763px;
+    height: 650px;
+    right: -120px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 1200px) {
   .img-mobileScreens {
     width: 454px;
     height: 405px;
-    overflow: hidden;
     top: -100px;
     left: -130px;
     bottom: 0;
+  }
+  .content-listBlock {
+    padding-top: 326px;
+  }
+}
+@media (min-width: 375px) and (max-width: 1400px) {
+  .content-buttonBlock{
+    padding-bottom: 73px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 1400px) {
+  .container {
+    width: 85%;
   }
 
   .content-listBlock {
@@ -61,6 +138,7 @@ export default {
     margin-top: 14px;
     display: flex;
     justify-content: space-between;
+    padding-top: 0px;
   }
 
   .content-buttonBlock img {
@@ -70,78 +148,13 @@ export default {
 
   .imgGooglePlay {
     width: 151px;
-
   }
 
   img .imgAppStore {
     width: 132px;
     margin-right: 0px;
   }
-  .content-buttonBlock {
-    padding-top: 0px;
-    padding-bottom: 73px;
-  }
 }
-
-@media (min-width: 1000px) and (max-width: 1200px){
-
-}
-.content {
-  width: 100%;
-  background: #E5E5E5;
-  position: relative;
-}
-.content-mainBlock {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-}
-.content-buttonBlock {
-  padding-top: 32px;
-  padding-bottom: 250px;
-}
-
-.content-buttonBlock img {
-  max-width: 168px;
-  max-height: 50px;
-
-}
-.imgAppStore {
-  margin-right: 20px;
-}
-
-.content-listBlock {
-  font-family: Lato, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  color: #112A32;
-  padding-top: 326px;
-}
-
-.content-listBlock li {
-  padding-bottom: 28px;
-}
-
-
-  .img-mobileScreens {
-    position: absolute;
-    width: 953px;
-    height: 850px;
-    bottom: 14px;
-    left: 560px;
-    top: -150px;
-    z-index: 10;
-  }
-
-
-
-
-
-
-
 
 
 
