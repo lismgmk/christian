@@ -21,15 +21,14 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  // plugins: ["~/plugins/i18n.js"],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-  '@nuxtjs/google-fonts'
+  '@nuxtjs/google-fonts',
   ],
   googleFonts: {
     families: {
@@ -37,9 +36,59 @@ export default {
       Lato: [400, 700],
     }
   },
+
   // Modules: https://go.nuxtjs.dev/config-modules
+
   modules: [
+    [
+      "nuxt-i18n",
+      {
+        locales: [
+          {
+            code: "en",
+            iso: "en-us",
+            name: "english"
+          },
+          {
+            code: "ru",
+            iso: "ru-Ru",
+            name: "中文"
+          }
+        ],
+        detectBrowserLanguage: {
+          useCookie: true,
+          cookieKey: "i18n_redirected"
+        },
+        vueI18nLoader: true,
+        defaultLocale: "en",
+
+        vueI18n: {
+          // fallbackLocale: 'en'
+        }
+      }
+    ]
+
+
   ],
+  //   i18n: {
+  //     locales: ['en', 'fr', 'es'],
+  //     defaultLocale: 'en',
+  //     vueI18n: {
+  //       fallbackLocale: 'en',
+  //       messages: {
+  //         en: {
+  //           welcome: 'Welcome'
+  //         },
+  //         fr: {
+  //           welcome: 'Bienvenue'
+  //         },
+  //         es: {
+  //           welcome: 'Bienvenido'
+  //         }
+  //       }
+  //     }
+  //   },
+
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
