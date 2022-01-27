@@ -16,8 +16,11 @@ export default {
     ]
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/css/main.css',
+    '@/assets/css/header.css',
+    '@/assets/css/content.css',
+    '@/assets/css/titleNote.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -40,54 +43,22 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
 
   modules: [
-    [
-      "nuxt-i18n",
-      {
-        locales: [
-          {
-            code: "en",
-            iso: "en-us",
-            name: "english"
-          },
-          {
-            code: "ru",
-            iso: "ru-Ru",
-            name: "中文"
-          }
-        ],
-        detectBrowserLanguage: {
-          useCookie: true,
-          cookieKey: "i18n_redirected"
-        },
-        vueI18nLoader: true,
-        defaultLocale: "en",
-
-        vueI18n: {
-          // fallbackLocale: 'en'
-        }
-      }
-    ]
-
-
+    "@nuxtjs/i18n"
   ],
-  //   i18n: {
-  //     locales: ['en', 'fr', 'es'],
-  //     defaultLocale: 'en',
-  //     vueI18n: {
-  //       fallbackLocale: 'en',
-  //       messages: {
-  //         en: {
-  //           welcome: 'Welcome'
-  //         },
-  //         fr: {
-  //           welcome: 'Bienvenue'
-  //         },
-  //         es: {
-  //           welcome: 'Bienvenido'
-  //         }
-  //       }
-  //     }
-  //   },
+    i18n: {
+      locales: [
+        { code: "en", iso: "en-US", file: "content-en.json" },
+        { code: "ru", iso: "ru-RU", file: "content-ru.json" },
+        { code: "es", iso: "es-ES", file: "content-es.json" }
+      ],
+      langDir: "~/locales/",
+      detectBrowserLanguage: {
+        useCookie: true,
+        cookieKey: "i18n_redirected"
+      },
+      vueI18nLoader: true,
+      defaultLocale: "en",
+    },
 
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
