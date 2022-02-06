@@ -13,7 +13,7 @@
 }
 
 .titleNote-mainBlock {
-  font-family: Lato, SansSerif;
+  font-family: Lato, sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,7 +34,7 @@
   padding-bottom: 141px;
 }
 
-@media (min-width: 375px) and (max-width: 1200px){
+@media only screen and (min-width: 375px) and (max-width: 1200px){
 
   .titleNote-mainBlock {
     flex-direction: column-reverse;

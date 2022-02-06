@@ -55,12 +55,12 @@
   z-index: 10;
 }
 
-@media (min-width: 1400px) and (max-width: 1600px) {
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
   .img-mobileScreens {
     right: -120px;
   }
 }
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .img-mobileScreens {
     width: 763px;
     height: 650px;
@@ -68,7 +68,7 @@
   }
 }
 
-@media (min-width: 375px) and (max-width: 1200px) {
+@media only screen and (min-width: 375px) and (max-width: 1200px) {
   .img-mobileScreens {
     width: 454px;
     height: 405px;
@@ -80,13 +80,13 @@
     padding-top: 326px;
   }
 }
-@media (min-width: 375px) and (max-width: 1400px) {
+@media only screen and (min-width: 375px) and (max-width: 1400px) {
   .content-buttonBlock{
     padding-bottom: 73px;
   }
 }
 
-@media (min-width: 375px) and (max-width: 1400px) {
+@media only screen and (min-width: 375px) and (max-width: 1400px) {
 
 
   .content-listBlock {
@@ -102,7 +102,7 @@
     margin-top: 14px;
     display: flex;
     justify-content: space-between;
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   .content-buttonBlock img {
@@ -116,6 +116,6 @@
 
   img .imgAppStore {
     width: 132px;
-    margin-right: 0px;
+    margin-right: 0;
   }
 }

@@ -35,7 +35,7 @@
   text-align: center;
 }
 
-@media (min-width: 375px) and (max-width: 1000px){
+@media only screen and (min-width: 375px) and (max-width: 1000px){
 
   .header-logoBlock_subtitle{
     font-size: 34px;
