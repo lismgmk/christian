@@ -14,8 +14,8 @@
             'header-logoBlock_subtitle-Es': lang === 'es',
         }"
         >
-        <p>{{ $t('headerSubtitleStart') }} &nbsp</p>
-          <p>{{ $t('headerSubtitleEnd') }}</p>
+        <p>{{ $t('headerSubtitleStart') }} </p>
+          <p>&nbsp{{ $t('headerSubtitleEnd') }}</p>
         </div>
       </div>
 

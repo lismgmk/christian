@@ -35,6 +35,16 @@
   text-align: center;
   display: flex;
 }
+@media only screen and (min-width: 1260px) and (max-width: 1520px){
+  .header-logoBlock_subtitle-Ru{
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 780px) and (max-width: 1260px){
+  .header-logoBlock_subtitle-Ru{
+    flex-direction: row;
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 780px){
   .header-logoBlock_subtitle-Ru{
     flex-direction: column;
@@ -50,7 +60,7 @@
     flex-direction: column;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 1200px){
+@media only screen and (min-width: 320px) and (max-width: 1260px){
 
   .header-logoBlock_subtitle{
     font-size: 34px;
