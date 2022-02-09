@@ -1,23 +1,23 @@
 <template>
   <div>
-    <Header  :lang="lang"/>
-    <TitleNote/>
-    <Content/>
+    <header-main  :lang="lang"/>
+    <title-note/>
+    <content-main/>
   </div>
 </template>
 
 <script>
-import Header from '/components/Header.vue';
 import TitleNote from '/components/TitleNote.vue';
-import Content from '/components/Content.vue';
+import HeaderMain from "../components/HeaderMain";
+import ContentMain from "../components/ContentMain";
 
 export default {
 
   name: 'NuxtTutorial',
   components: {
-    Header,
+    HeaderMain,
     TitleNote,
-    Content
+    ContentMain
   },
   data(){
     return{

@@ -9,12 +9,12 @@
             <li>{{$t('contentThird')}}</li>
           </ul>
           <div class="content-buttonBlock">
-            <img class="imgAppStore" src="imgAppStore.png"/>
-            <img class="imgGooglePlay" src="imgGooglePlay.png"/>
+            <img alt="" class="imgAppStore" src="~/static/imgAppStore.png"/>
+            <img alt="" class="imgGooglePlay" src="~/static/imgGooglePlay.png"/>
           </div>
         </div>
 
-        <img class="img-mobileScreens" src="imgMobileScreens.png"/>
+        <img alt="" class="img-mobileScreens" src="~/static/imgMobileScreens.png"/>
       </div>
     </div>
   </div>
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: "Content"
+  name: "ContentMain"
 }
 </script>
 

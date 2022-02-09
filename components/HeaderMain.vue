@@ -11,9 +11,10 @@
           :class="{
             'header-logoBlock_subtitle-En': lang === 'en',
             'header-logoBlock_subtitle-Ru': lang === 'ru',
+            'header-logoBlock_subtitle-Es': lang === 'es',
         }"
         >
-        <p>{{ $t('headerSubtitleStart') }}</p>
+        <p>{{ $t('headerSubtitleStart') }} &nbsp</p>
           <p>{{ $t('headerSubtitleEnd') }}</p>
         </div>
       </div>
@@ -24,28 +25,19 @@
 </template>
 
 <script>
+import NuxtLogo from "./NuxtLogo";
+
 export default {
-  name: "Header",
+  name: "HeaderMain",
+  components: {
+   NuxtLogo
+  },
   props: {
     lang: {
       type: String,
       required: true
     }
   },
-  // data(){
-  //   return{
-  //     lang : ''
-  //   }
-  // },
-  // created() {
-  //   this.lang = this.$i18n.locale
-  // },
-  watch:{
-    lang(val){
-      console.log(val, 'ddddddd')
-    return this.lang
-    }
-  }
 }
 </script>
 

@@ -91,7 +91,14 @@
   .img-mobileScreens {
     left: -5%;
   }
+
 }
+@media only screen and (min-width: 1200px) and (max-width: 1370px) {
+  .content-listBlock{
+    width: 650px;
+  }
+}
+
 @media only screen and (min-width: 400px) and (max-width: 630px) {
   .img-mobileScreens {
 left: -15%;
