@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header/>
+    <Header  :lang="lang"/>
     <TitleNote/>
     <Content/>
   </div>
@@ -19,12 +19,15 @@ export default {
     TitleNote,
     Content
   },
+  data(){
+    return{
+      lang : ''
+    }
+  },
   mounted() {
     if (process.browser){
-      console.log(this.$i18n.locale, 'locale')
-      console.log(window.navigator.language, 'win')
       this.$i18n.locale = window.navigator.language
-      // this.$router.push({ path:  this.switchLocalePath(this.$i18n.locale.slice(0,2))})
+     this.lang = window.navigator.language.slice(0,2)
     }
   },
 

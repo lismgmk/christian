@@ -5,7 +5,7 @@
         <cross-icon class="titleNote-cross_icon"/>
         <div class="titleNote-entriesBlock">
           <div class="titleNote-enentriesBlock_text">
-            {{$t('titleNoteEntries')}}
+            "{{$t('titleNoteEntries')}}"
           </div>
           <p>—  {{$t('titleNoteEntriesMark')}} 11:24</p>
         </div>

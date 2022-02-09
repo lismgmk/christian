@@ -60,36 +60,60 @@
   }
 }
 
+
 @media only screen and (min-width: 1200px) and (max-width: 1700px) {
   .img-mobileScreens {
-    width: 763px;
-    height: 650px;
+    width: 575px;
+    height: 524px;
     top: -100px;
-    left: -130px;
+    right: -50px;
     bottom: 0;
   }
   .content-listBlock {
-    padding-top: 560px;
+    padding-top: 115px;
   }
 }
 
 
-@media only screen and (min-width: 350px) and (max-width: 1200px) {
+@media only screen and (min-width: 470px) and (max-width: 1200px) {
   .img-mobileScreens {
     width: 454px;
     height: 405px;
     top: -100px;
-    left: -130px;
     bottom: 0;
+    margin: 0 auto;
   }
   .content-listBlock {
     padding-top: 326px;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 350px) {
+@media only screen and (min-width: 630px) and (max-width: 1200px) {
+  .img-mobileScreens {
+    left: -5%;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 630px) {
+  .img-mobileScreens {
+left: -15%;
+  }
+}
+@media only screen and (min-width: 335px) and (max-width: 400px) {
+  .img-mobileScreens {
+left: -30%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 335px) {
+  .img-mobileScreens {
+left: -36%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 470px) {
   .img-mobileScreens {
     width: 400px;
     height: 350px;
+    top: -12%;
+    margin: 0 auto;
   }
   .content-buttonBlock {
     flex-direction: column;
@@ -99,7 +123,12 @@
   .content-buttonBlock img{
     margin-bottom: 14px;
   }
+  .content-listBlock{
+    padding-top: 265px;
+  }
+
 }
+
 
 @media only screen and (min-width: 350px) and (max-width: 1700px) {
   .content-buttonBlock{
@@ -107,8 +136,7 @@
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 1400px) {
-
+@media only screen and (min-width: 370px) and (max-width: 1400px) {
 
   .content-listBlock {
     font-size: 24px;
@@ -121,8 +149,8 @@
 
   .content-buttonBlock {
     margin-top: 14px;
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
     padding-top: 0;
   }
 
@@ -138,5 +166,25 @@
   img .imgAppStore {
     width: 132px;
     margin-right: 0;
+  }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 370px) {
+  .content-buttonBlock img {
+    height: 40px;
+
+  }
+
+  .imgGooglePlay {
+    width: 141px;
+  }
+
+  img .imgAppStore {
+    width: 131px;
+
+  }
+  .imgAppStore{
+    margin-right: 4px;
   }
 }
